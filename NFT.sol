@@ -18,7 +18,7 @@ contract NFT is ERC721, PullPayment, Ownable {
   /// @dev Base token URI used as a prefix by tokenURI().
   string public baseTokenURI;
 
-  constructor() ERC721("Ali Tuhua", "ALI") {
+  constructor() ERC721("阿里土话", "ALI") {
     baseTokenURI = "";
   }
 
