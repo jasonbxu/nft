@@ -45,7 +45,12 @@ contract NFT is ERC721, PullPayment, Ownable {
 
     currentTokenId.increment();
     uint256 newItemId = currentTokenId.current();
+    if(_exists(newItemID) {
+    mintTo(recipient);
+    }
+    else {
     _safeMint(recipient, newItemId);
+    }
     return newItemId;
   }
 
