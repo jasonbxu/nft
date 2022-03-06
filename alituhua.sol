@@ -21,6 +21,20 @@ contract NFT is ERC721, PullPayment, Ownable {
 
   constructor() ERC721("阿里土话", "ALI") {
     baseTokenURI = "";
+    _safeMint(0x22C2E91f7fd0B7DECB53D7F10aFebd95CC08779a, 26);
+    _safeMint(0x22C2E91f7fd0B7DECB53D7F10aFebd95CC08779a, 41);
+    _safeMint(0x22C2E91f7fd0B7DECB53D7F10aFebd95CC08779a, 103);
+    _safeMint(0x22C2E91f7fd0B7DECB53D7F10aFebd95CC08779a, 104);
+    _safeMint(0x22C2E91f7fd0B7DECB53D7F10aFebd95CC08779a, 105);
+    _safeMint(0x22C2E91f7fd0B7DECB53D7F10aFebd95CC08779a, 109);
+    _safeMint(0x22C2E91f7fd0B7DECB53D7F10aFebd95CC08779a, 115);
+    _safeMint(0x22C2E91f7fd0B7DECB53D7F10aFebd95CC08779a, 117);
+    _safeMint(0x22C2E91f7fd0B7DECB53D7F10aFebd95CC08779a, 122);
+    _safeMint(0x22C2E91f7fd0B7DECB53D7F10aFebd95CC08779a, 123);
+    _safeMint(0x22C2E91f7fd0B7DECB53D7F10aFebd95CC08779a, 126);
+    _safeMint(0x22C2E91f7fd0B7DECB53D7F10aFebd95CC08779a, 146);
+    _safeMint(0x22C2E91f7fd0B7DECB53D7F10aFebd95CC08779a, 147);
+    _safeMint(0x22C2E91f7fd0B7DECB53D7F10aFebd95CC08779a, 150);
   }
 
   function mintTo(address recipient) public payable returns (uint256) {
