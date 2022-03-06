@@ -17,6 +17,7 @@ contract NFT is ERC721, PullPayment, Ownable {
 
   /// @dev Base token URI used as a prefix by tokenURI().
   string public baseTokenURI;
+  string public contractURI;
 
   constructor() ERC721("阿里土话", "ALI") {
     baseTokenURI = "";
@@ -37,9 +38,19 @@ contract NFT is ERC721, PullPayment, Ownable {
     return baseTokenURI;
   }
 
+  /// @dev Returns URI for the contract
+  function contractURI() public view returns (string memory) {
+    return contractURI;
+  }
+
   /// @dev Sets the base token URI prefix.
   function setBaseTokenURI(string memory _baseTokenURI) public onlyOwner {
     baseTokenURI = _baseTokenURI;
+  }
+
+  /// @dev Sets the contract URI.
+  function setContractURI(string memory _contractURI) public onlyOwner {
+    contractURI = _contractURI;
   }
 
   /// @dev Overridden in order to make it an onlyOwner function
