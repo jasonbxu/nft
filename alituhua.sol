@@ -19,6 +19,7 @@ contract NFT is ERC721, PullPayment, Ownable {
   string public baseTokenURI;
   string public contractURI;
 
+  /// @dev reserving the following Token IDs
   constructor() ERC721("阿里土话", "ALI") {
     baseTokenURI = "";
     _safeMint(0x22C2E91f7fd0B7DECB53D7F10aFebd95CC08779a, 26);
@@ -39,19 +40,23 @@ contract NFT is ERC721, PullPayment, Ownable {
     _safeMint(0x22C2E91f7fd0B7DECB53D7F10aFebd95CC08779a, 150);
   }
 
+
+  /// @dev Since some token IDs are reserved, need to skip them when minting
   function mintTo(address recipient) public payable returns (uint256) {
     uint256 tokenId = currentTokenId.current();
     require(tokenId < TOTAL_SUPPLY, "Max supply reached");
 
     currentTokenId.increment();
     uint256 newItemId = currentTokenId.current();
+
+    /// @dev Checks if item has already been minted, if so, recursively mint again
     if(_exists(newItemID) {
     mintTo(recipient);
     }
     else {
     _safeMint(recipient, newItemId);
-    }
     return newItemId;
+    }
   }
 
   /// @dev Returns an URI for a given token ID
