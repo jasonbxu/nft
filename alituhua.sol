@@ -51,7 +51,7 @@ contract NFT is ERC721, PullPayment, Ownable {
 
     /// @dev Checks if item has already been minted, if so, recursively mint again
     if(_exists(newItemID) {
-    mintTo(recipient);
+    return mintTo(recipient);
     }
     else {
     _safeMint(recipient, newItemId);
