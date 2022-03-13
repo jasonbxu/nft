@@ -1,7 +1,7 @@
 {
-    "description" : "This NFT collection celebrates Alibaba's 土话, common sayings that serves as the company's unofficial motto.",
-    "external_url" : "https://github.com/jasonbxu/nft/blob/main/metadata/",
-    "name" : "If not now, when? If not me, who? （此时此刻，非我莫属）",
+    "description" : "舍我其谁的承担，揭竿而起的豪气，透露着就是身为阿里人的胸怀和斗志！",
+    "name" : "If not now, when? If not me, who?",
+	"image" : "https://bafybeicioy5j6ike2rqp4awiaytpl5nzfhb7lbfqqxd5xmd7g26bkgdr2m.ipfs.dweb.link/images/1.png",
     "attributes" : [
       {
         "trait_type": "Idiom Type", 
