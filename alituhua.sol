@@ -23,6 +23,7 @@ contract NFT is ERC721, PullPayment, Ownable {
   constructor() ERC721("阿里土话", "ALI") {
     baseTokenURI = "";
     _safeMint(0x22C2E91f7fd0B7DECB53D7F10aFebd95CC08779a, 2);
+    _safeMint(0x22C2E91f7fd0B7DECB53D7F10aFebd95CC08779a, 3);
     _safeMint(0x22C2E91f7fd0B7DECB53D7F10aFebd95CC08779a, 23);
     _safeMint(0x22C2E91f7fd0B7DECB53D7F10aFebd95CC08779a, 26);
     _safeMint(0x22C2E91f7fd0B7DECB53D7F10aFebd95CC08779a, 27);
